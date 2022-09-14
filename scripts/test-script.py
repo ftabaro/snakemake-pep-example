@@ -1,0 +1,1 @@
+print(snakemake.params.sample_table)

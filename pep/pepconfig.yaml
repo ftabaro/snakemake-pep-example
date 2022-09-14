@@ -1,0 +1,11 @@
+pep_version: 2.1.0
+sample_table: "samples.csv"
+subsample_table: ["dataset1.csv", "dataset2.csv"]
+
+sample_modifiers:
+  append:
+    file_path: reads
+  derive:
+    attributes: ["file_path"]
+    sources:
+      reads: "/some/custom/path/{sample_name}"
