@@ -1,1 +1,1 @@
-print(snakemake@params[["sample_table"]])
+print(as.data.frame(snakemake@params[["sample_table"]]))

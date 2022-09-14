@@ -17,7 +17,7 @@ rule final:
     input:
         "results/first.done"
     params:
-        sample_table=pep.sample_table
+        sample_table=pep.sample_table.to_dict(orient="list")
     output:
         touch("results/all.done")
     script:
