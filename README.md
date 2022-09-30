@@ -250,7 +250,7 @@ Here, in the `params` section, we are using the `Pandas.DataFrame.to_dict` metho
 In the example above, the `pep.sample_table` DataFrame was converted to a dictionary with each column name as key, each column value collected in a list and stored as dictionary value. This object can be passed into a R script as-is and casted back to a data.frame like so:
 
 ```R
-sample_table <- as.data.frame(snakemake@params[["sample_table"]]
+sample_table <- as.data.frame(snakemake@params[["sample_table"]])
 ```
 Which produces something like:
 ```
